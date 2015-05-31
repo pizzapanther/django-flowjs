@@ -54,7 +54,7 @@ class UploadView(View):
         chunk, created = flow_file.chunks.get_or_create(number=self.flowChunkNumber, defaults={
             'file': form.cleaned_data['file'],
         })
-        if not created:
+        if not created and hasattr(form, 'file'):
             chunk.file = form.file
             chunk.size = form.size
             chunk.save()
