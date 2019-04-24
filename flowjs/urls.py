@@ -1,7 +1,7 @@
 from django.urls import path, re_path, include
 from django.views.decorators.csrf import csrf_exempt
 
-from views import UploadView, CheckStateView
+from .views import UploadView, CheckStateView
 
 app_name = 'flowjs'
 
