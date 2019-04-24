@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import FlowFile, FlowFileChunk
+from models import FlowFile, FlowFileChunk
 
 
 class FlowFileChunkInline(admin.TabularInline):

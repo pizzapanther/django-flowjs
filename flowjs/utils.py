@@ -1,7 +1,7 @@
 import os
 import datetime
 import mimetypes
-from .settings import FLOWJS_PATH, FLOWJS_EXPIRATION_DAYS
+from settings import FLOWJS_PATH, FLOWJS_EXPIRATION_DAYS
 
 
 def chunk_upload_to(instance, filename):

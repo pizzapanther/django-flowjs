@@ -2,7 +2,7 @@ from django import http
 from django import forms
 from django.views.generic.base import View
 from django.shortcuts import get_object_or_404
-from .models import FlowFile, FlowFileChunk
+from models import FlowFile, FlowFileChunk
 
 
 class FlowFileForm(forms.Form):
