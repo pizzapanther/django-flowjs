@@ -140,7 +140,7 @@ class FlowFile(models.Model):
 
             if FLOWJS_AUTO_DELETE_CHUNKS:
                 self.delete_chunks()
-        except Exception, e:
+        except Exception as e:
             self.state = self.STATE_JOINING_ERROR
             super(FlowFile, self).save()
 
