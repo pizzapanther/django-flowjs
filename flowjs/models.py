@@ -5,7 +5,7 @@ from django.db.models.signals import pre_delete
 from django.dispatch.dispatcher import receiver
 from django.core.files.storage import default_storage
 from django.conf import settings
-from settings import FLOWJS_PATH, FLOWJS_REMOVE_FILES_ON_DELETE, \
+from .settings import FLOWJS_PATH, FLOWJS_REMOVE_FILES_ON_DELETE, \
     FLOWJS_AUTO_DELETE_CHUNKS, FLOWJS_JOIN_CHUNKS_IN_BACKGROUND, FLOWJS_WITH_CELERY
 from utils import chunk_upload_to, guess_filetype
 from signals import file_is_ready, file_joining_failed, file_upload_failed
