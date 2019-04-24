@@ -176,7 +176,7 @@ class FlowFileChunk(models.Model):
         ordering = ['number']
 
     # identification and file details
-    parent = models.ForeignKey(FlowFile, related_name="chunks")
+    parent = models.ForeignKey(FlowFile, related_name="chunks", on_delete=models.CASCADE)
     file = models.FileField(max_length=255, upload_to=chunk_upload_to)
     number = models.IntegerField()
     created_at = models.DateTimeField(auto_now_add=True)
